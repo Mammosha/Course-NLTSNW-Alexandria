@@ -1,0 +1,18 @@
+body {
+   text-align: center;
+   font-size: 18px;
+   font-style: italic;
+   font-family: 'Times New Roman', Times, serif;
+}
+span, a {
+    color: teal;
+    font-weight: 800;
+}
+.title {
+    color: darkslategrey;
+    font-family: cursive;
+}
+.title-bold {
+    color: black;
+    font-family: serif;
+}
