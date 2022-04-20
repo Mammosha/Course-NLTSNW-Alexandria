@@ -15,6 +15,10 @@
     filter: drop-shadow(0 12px 10px rgba(0, 0, 0, .7));
     margin-bottom: 20px;
 }
+.groupe-logo-img{
+    display: block;
+    max-width: 100%;
+}
 .groupe-title {
     font-family: fantasy;
     font-size: xx-large;
