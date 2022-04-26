@@ -1,20 +1,12 @@
-.table {
-    width: 800px;
-    height: 800px;
-    border: 2px solid black;
-    margin: 100px auto;
-}
-
+/* -------------MAIN STYLES------------- */
 .square-house {
     width: 150px;
     height: 150px;
     background: rgb(178, 209, 228);
     opacity: 1;
     position: relative;
-    /* left: 100px;
-    top: 250px; */
-    animation-name: move-square;
-    animation-duration: 3s;
+    animation-name: move-square-house;
+    animation-duration: 9s;
     animation-iteration-count: 1;
     animation-fill-mode: both;
 }
@@ -37,6 +29,10 @@
     top: 2px;
     left: 90px;
     position: relative;
+    animation-name: change-color-window;
+    animation-duration: 20s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
 }
 
 .wrapper{
@@ -45,56 +41,79 @@
 }
 
 .circle-tree-1 {
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     background: green;
     opacity: 1;
     border-radius: 50%;
     position: relative;
-/* left: 100px;
-    top: 250px; */
-    animation-name: move-circle;
-    animation-duration: 8s;
+    animation-name: move-circle-tree-1;
+    animation-duration: 10s;
     animation-iteration-count: 1;
     animation-fill-mode: both;
 }
 
 .rectangle-tree-1 {
-    width: 25px;
-    height: 55px;
+    width: 30px;
+    height: 60px;
     background: red;
     opacity: 1;
     position: relative;
-    /* top: 150px; */
-    animation-name: move-rectangle;
-    animation-duration: 2s;
+    animation-name: move-rectangle-tree-1;
+    animation-duration: 9s;
     animation-iteration-count: 1;
     animation-fill-mode: both;
 }
 
 .circle-tree-2 {
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     background: green;
     opacity: 1;
     border-radius: 50%;
     position: relative;
-    left: 91%;
-    animation-name: move-circle;
-    animation-duration: 8s;
+    left: 720px;
+    animation-name: move-circle-tree-2;
+    animation-duration: 10s;
     animation-iteration-count: 1;
     animation-fill-mode: both;
 }
 
 .rectangle-tree-2 {
-    width: 25px;
-    height: 55px;
+    width: 30px;
+    height: 60px;
     background: red;
     opacity: 1;
     position: relative;
-    left: 97%;
-    animation-name: move-rectangle;
-    animation-duration: 2s;
+    left: 770px;
+    animation-name: move-rectangle-tree-2;
+    animation-duration: 9s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 120px solid transparent;
+    border-right: 120px solid transparent;
+    border-bottom: 120px solid red;
+    opacity: 1;
+    position: relative;
+    animation-name: move-triangle;
+    animation-duration: 11s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+.rectangle-ground {
+    width: 120px;
+    height: 60px;
+    background: green;
+    opacity: 1;
+    position: relative;
+    animation-name: move-rectangle-ground;
+    animation-duration: 9s;
     animation-iteration-count: 1;
     animation-fill-mode: both;
 }
@@ -106,34 +125,195 @@
     opacity: 0.8;
     border-radius: 50%;
     position: absolute;
-    left: 75%;
-}
-
-.triangle {
-    width: 0;
-    height: 0;
-    border-left: 80px solid transparent;
-    border-right: 80px solid transparent;
-    border-bottom: 100px solid red;
-    opacity: 1;
-    position: relative;
-    /* bottom: 100px;
-    left: 100px;*/
-    animation-name: move-triangle;
-    animation-duration: 4s;
+    right: 0px;
+    bottom: 60px;
+    animation-name: move-circle-sun;
+    animation-duration: 20s;
     animation-iteration-count: 1;
     animation-fill-mode: both;
 }
 
-.rectangle-ground {
-    width: 120px;
-    height: 60px;
-    background: green;
-    opacity: 1;
+.table {
+    width: 800px;
+    height: 800px;
+    border: 2px solid black;
+    margin: 100px auto;
     position: relative;
-    /* top: 150px; */
-    animation-name: move-rectangle;
-    animation-duration: 2s;
+    animation-name: change-color-table;
+    animation-duration: 20s;
     animation-iteration-count: 1;
     animation-fill-mode: both;
 }
+/* -------------END MAIN STYLES------------- */
+
+/* -----------------ANIMATION------------------- */
+
+@keyframes move-rectangle-ground {
+    30% {
+        top: 0px;
+        width: 120px;
+    }
+    100% {
+        top: 30px;
+        width: 800px;
+    }
+}
+
+@keyframes move-square-house {
+    30% {
+        left: 0px;
+        top: 0px;
+    }
+    100% {
+        left: 325px;
+        top: 590px;
+    }
+}
+
+@keyframes move-circle-tree-2 {
+    30% {
+        left: 720px;
+        top: 0px;
+    }
+    60% {
+        left: 630px;
+        top: 0;
+    }
+    80% {
+        left: 630px;
+        top: 0;
+    }
+    100% {
+        left: 630px;
+        top: 150px;
+        
+    }
+}
+
+@keyframes move-rectangle-tree-2 {
+    30% {
+        left: 770px;
+        top: 0px;
+    }
+    60% {
+        left: 655px;
+        top: 0;
+    }
+    80% {
+        left: 655px;
+        top: 150px;
+    }
+    100% {
+        left: 655px;
+        top: 150px;
+    }
+}
+
+@keyframes move-circle-tree-1 {
+    50% {
+        left: 0px;
+        top: 0px;
+    }
+    80% {
+        left: 0px;
+        top: 0;
+    }
+    100% {
+        left: 30px;
+        top: 290px;
+    }
+}
+
+@keyframes move-rectangle-tree-1 {
+    30% {
+        left: 0px;
+        top: 0px;
+    }
+    60% {
+        left: 0px;
+        top: 0px;
+    }
+    80% {
+        left: 55px;
+        top: 290px;
+    }
+    100% {
+        left: 55px;
+        top: 290px;
+    }
+}
+
+@keyframes move-triangle {
+    50% {
+        left: 0px;
+        bottom: 0px;
+    }
+    100% {
+        left: 280px;
+        bottom: 120px;
+    }
+}
+
+@keyframes move-circle-sun {
+    50% {
+        right: 0px;
+        bottom: 60px;
+        background: yellow;
+    }
+    60% {
+        right: 80px;
+        bottom: 580px;
+        box-shadow: inset 0px 0px 30px 5px rgba(0, 0, 0, 0.4);
+        background: yellow;
+    }
+    70% {
+        right: 80px;
+        bottom: 580px;
+        box-shadow: inset 0px 0px 30px 5px rgba(0, 0, 0, 0.4);
+        background: white;
+    }
+    80% {
+        right: 80px;
+        bottom: 580px;
+        box-shadow: inset 0px 0px 30px 5px rgba(0, 0, 0, 0.4);
+        background: white
+    }
+    85% {
+        right: 80px;
+        bottom: 580px;
+        box-shadow: inset 0px 0px 30px 5px rgba(0, 0, 0, 0.4);
+        background: white;
+    }
+    90% {
+        right: 80px;
+        bottom: 580px;
+        box-shadow: inset 0px 0px 30px 5px rgba(0, 0, 0, 0.4);
+        background: white;
+    }
+    100% {
+        right: 80px;
+        bottom: 580px;
+        box-shadow: inset 0px 0px 30px 5px rgba(0, 0, 0, 0.4);
+        background: white;
+    }
+}
+
+@keyframes change-color-table {
+    50% {
+        background: white;
+    }
+    100% {
+        background: black;
+    }
+}
+
+@keyframes change-color-window {
+    50% {
+        background: black;
+    }
+    100% {
+        background: yellow;
+    }
+}
+
+/* -----------------END ANIMATION------------------- */
