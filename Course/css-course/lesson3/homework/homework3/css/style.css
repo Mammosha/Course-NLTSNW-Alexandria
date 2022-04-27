@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+}
+body {
+    background-color: rgb(71, 71, 71);
+    margin: 0 auto; 
+}
+p{
+    margin-bottom: 16px;
+}
+
+.text-color {
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.group-header-container {
+    background-color: rgb(71, 71, 71);
+    max-width: 1139px;
+    margin: 0 auto;  
+}
+
+.groupe-logo-header{
+    filter: drop-shadow(0 12px 10px rgba(0, 0, 0, .7));
+    margin-bottom: 20px;
+}
+
+.groupe-logo-img{
+    display: block;
+    max-width: 100%;
+}
+
+.groupe-title {
+    font-family: fantasy;
+    font-size: xx-large;
+    margin-bottom: 30px;
+}
+
+.groupe-description {
+    padding: 12px;
+}
+
+.groupe-foto {
+    display: block;
+    max-width: 36%;
+    margin: auto 0px auto 16px;
+    float: left;
+}
+
+.article-text-2 {
+    float: left;
+    max-height: 450px;
+    max-width: 339px;
+}
+
+.article-text-3 {
+    float: right;
+    max-height: 450px;
+    max-width: 339px;
+}
+
+.clear {
+    clear: both;
+}
