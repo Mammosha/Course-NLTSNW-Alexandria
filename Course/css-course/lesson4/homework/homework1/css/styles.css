@@ -65,11 +65,79 @@
 
 .task-7 {
     justify-content: space-between;
-    /* flex-direction: row-reverse; */
+    flex-direction: row-reverse;
 }
 .task-7 .item-1 {
     order: 1;
 }
 .task-7 .item-3 {
+    order: -1;
+}
+.task-7 .item-4 {
+    order: -1;
+}
+.task-7 .item-2 {
+    order: 1;
+}
+
+.task-8 {
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+.task-8 .item-1 {
+    order: 1;
+}
+.task-8 .item-3 {
+    order: -1;
+}
+.task-8 .item-4 {
+    order: -1;
+    flex-grow: 2;
+}
+.task-8 .item-2 {
+    order: 1;
+    flex-grow: 2;
+}
+
+.task-9 {
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+}
+.task-9 .item-4 {
+    flex-grow: 4
+}
+.task-9 .item-3 {
+    flex-grow: 3;
+}
+.task-9 .item-2 {
+    flex-grow: 2;
+}
+
+.task-10 {
+    justify-content: space-around;
+}
+.task-10 .item-2 {
+    align-self: center;
+}
+.task-10 .item-4 {
+    align-self: center;
+}
+
+.task-11 {
+    justify-content: space-around;
+}
+.task-11 .item-1 {
+    order: 1;
+}
+.task-11 .item-2 {
+    order: 1;
+    align-self: flex-end;
+}
+.task-11 .item-3 {
+    order: 0;
+    align-self: center;
+}
+.task-11 .item-4 {
     order: 1;
 }
