@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+}
+
+#container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 32px;
+    font-weight: bold;
+    display: grid;
+    grid-template-areas: "block-1 block-1 block-1 block-1" "block-2 block-2 block-2 block-2" 
+    "block-3 block-3 block-3 block-3" "block-4 block-4 block-4 block-4";
+    grid-template-rows: 2fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    height: 100vh;
+}
+
+#block-1, #block-2, #block-3, #block-4 {
+    background: lightblue;
+}
+
+#block-1 {
+    grid-area: block-1;
+}
+
+#block-2 {
+    grid-area: block-2;
+}
+
+#block-3 {
+    grid-area: block-3;
+}
+
+#block-4 {
+    grid-area: block-4;
+}
